@@ -5,7 +5,7 @@ services:
     container_name: foxglove-server 
     tty: true
     build:
-      context: foxglove-server
+      context: .
       dockerfile: Dockerfile
     volumes:
       - .:/root/ascii-art-viewer:rw
