@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  foxglove-server:
+    container_name: foxglove-server 
+    tty: true
+    build:
+      context: foxglove-server
+      dockerfile: Dockerfile
+    volumes:
+      - .:/root/ascii-art-viewer:rw
+    network_mode: "host"
+    ipc: "host"
+    pid: "host"
