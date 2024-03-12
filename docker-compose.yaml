@@ -8,7 +8,9 @@ services:
       context: .
       dockerfile: Dockerfile
     volumes:
-      - .:/root/ascii-art-viewer:rw
+      - .:/foxglove-server:rw
     network_mode: "host"
     ipc: "host"
     pid: "host"
+    command:
+      ["bash"]
